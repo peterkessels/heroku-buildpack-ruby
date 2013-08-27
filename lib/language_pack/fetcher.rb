@@ -28,6 +28,7 @@ module LanguagePack
     end
 
     def fetch_cdn(url)
+      return url
       cdn = @config[url]
       cdn.nil? ? url : cdn
     end
