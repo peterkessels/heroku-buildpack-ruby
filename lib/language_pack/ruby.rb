@@ -148,8 +148,8 @@ private
 
   # the absolute path of the build ruby to use during the buildpack
   # @return [String] resulting path
-  def build_ruby_path
-    "/tmp/#{ruby_version}"
+  def build_ruby_path(version = ruby_version)
+    "/tmp/#{version}"
   end
 
   def ruby_version_file
